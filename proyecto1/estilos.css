@@ -43,6 +43,7 @@ nav ul li{
     padding: 16px ;
     background-color: blue;
     list-style: none;
+    text-decoration: none;
     
 }
 
@@ -56,14 +57,16 @@ nav ul a {
 /* creamos menu y la lista */ 
 
 .menu ul {
-    position: absolute;
+     position: absolute;
      top: 50px;
      right: 0;
+     padding: 0;
      width: 100%;
      height: 0;
-     opacity: 0% ;
+     opacity: 0%;
      background: white;
      overflow: hidden;
+     font-family: 'IBM Plex Mono';
 }
 
 .menu li:hover{
@@ -169,17 +172,6 @@ h1{
 }
 
 
-.span_punto{
-     color: blue;
-
-    
-
-}
-
-
-
-
-
 h2{
     font-family: "IBM Plex Sans";
     font-size: 36px;
@@ -199,6 +191,12 @@ p{
     line-height: 24px;
 }
 
+.parrafo-desktop{
+    opacity: 0;
+    display: none;
+}
+
+
 .parrafo_topicos{
     font-family:'IBM Plex Sans', sans-serif;
     font-weight: 600;
@@ -216,7 +214,7 @@ p{
 
 
 
-.container-section_episodios{
+.containsection_episodios{
    margin-top:3em;
 }
 
@@ -249,7 +247,8 @@ p{
 .img_telefono{
     position: relative;
     margin-top: -10em;
-    height: auto ;
+    max-width: 100%;
+    
     
 }
 
@@ -276,8 +275,10 @@ p{
 
 nav a:link{
     font-family: 'IBM Plex Mono';
-    font-size: 16px;
-    color: #060A24;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    
 }
 
 nav a:hover{
@@ -303,7 +304,16 @@ nav a:active{
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);    
 }
 
+ 
 
+.ultimas_novedades a:link{
+    background: #00F3BB;
+
+}
+
+.ultimas_novedades a:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
 
 
 
@@ -387,6 +397,7 @@ nav a:active{
     max-width: 100%; 
     min-height: 232px;
     margin: 0 4px 11px;
+    border: 0;
      
  }
 
@@ -418,7 +429,6 @@ nav a:active{
     height: 48px;
     opacity: 100%;
     padding: 16px 59px 16px 59px;
-    
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -476,12 +486,39 @@ nav a:active{
    
  h1{
      font-size: 64px;
+     margin-top: 5.1%;
  }
   
   
 h2{
     font-size: 48px;
 }
+
+
+
+.parrafo-mobile{
+    opacity: 0;
+    display: none;
+}
+
+.span_punto{
+    color: blue;
+
+}
+
+
+
+
+
+
+
+#img_logo{
+  margin-left: 6.9%;
+  width: 36px;
+  height: 36px;
+
+}
+
   
 #titulo_episodio{
     font-size: 48px;
@@ -498,10 +535,33 @@ h2{
     margin-left: 200px;
 }
 
-  
-.img_telefono{
-   margin-left: 200px;
+#button_conoce_mas{
+    width: 226px;
+    height: 56px ;
+    padding: 20px 0px 20px;
+}
 
+
+
+
+
+
+/* nav */ 
+
+
+nav ul li{ 
+    padding: 16px ;
+    background-color: blue;
+    list-style: none;
+} 
+
+
+
+.menu ul{ 
+    width: 100%;
+    height: 0;
+    color: black;
+    font-family: 'IBM Plex Mono';
 }
   
   
@@ -525,13 +585,8 @@ h2{
        padding-left: 200px ;
     }
    
-   .flex-hijo{
-       width: 40em;
-       min-height: 232px;
-       margin-bottom: 30px;
 
-    }
-
+    
 
 
 
@@ -542,37 +597,52 @@ h2{
 
    .container-flex-hijos{
        display: flex;
+       flex-direction: row;
        justify-content: space-around;
        flex-wrap: wrap;
        
     } 
 
-
+    .flex-hijo{
+        width: 45%;
+        min-height: 232px;
+        margin-bottom: 30px;
+ 
+     }
    
+/* section telefono */
 
 
+     .section-telefono{
+        display: flex;
+     
+     }
+     
+     .img_telefono{
+          margin-left: 13.9%;
+          width: 457.6px;
+     
+     
+     }
 
 
 
  /* seccion entrevistas */
 
 
-  section #entrevistas .flex{
+  .img_container{
       display: flex;
-     
-    }
-  section #entrevistas .flex2{
-      display: flex;
+      flex-wrap: wrap;
       
-    }
-
-  #entrevistas img{
-    max-width:100%;
-    height: auto;
+      
   }
 
 
-
+  .img_invitados_estelares{
+      width: 33.3%;
+      height: auto;
+      
+  }
 
 
 
@@ -582,23 +652,19 @@ h2{
 
 
 
-
-
-  section #topicos .flex-titulo{
+section #topicos .flex-titulo{
      display: flex;
      
     }
   section #topicos .flex-topicos{
       display: flex;
       justify-content: space-between;
-      margin-left: 278px;
-      margin-right: 278px;
       margin-top: 69px;
+      margin-right: 19%;
+      margin-left: 19% ;
     }
-  #icono-topicos{
-      margin-right: 156px;
-
-    }
+ 
+    
   #icono-topicos p{
       font-size: 24px;
     }
@@ -607,12 +673,15 @@ h2{
 
 
 
-
-
-
  /* footer */
 
-
+ .listas-footer{
+    list-style: none;
+    display: inline;
+    width: 16px;
+    height: 28px;
+    margin-right: 38px;
+ }
 
    footer .flex{
      display: flex;
@@ -630,8 +699,8 @@ h2{
      margin-right: 100px;
     
     } 
-}
 
+ }
 
 
 /* media queries: TABLET */
@@ -648,4 +717,15 @@ h2{
         justify-content: center;
     }
   
+  }
+
+
+
+
+  @media (min-width: 1944px){
+      .container-flex-hijos{
+          display: flex;
+          flex-wrap: inherit;
+
+      }
   }
