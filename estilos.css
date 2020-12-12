@@ -553,7 +553,7 @@ nav ul li{
     padding: 0 16px;
     background-color: transparent;
 } 
-nav ul li:hover{
+.menu li:hover{
     background-color: transparent;
   
 
