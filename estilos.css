@@ -9,8 +9,7 @@
 
 
 body{
-  max-width: auto;
-  margin: 0 auto;
+   margin: 0 auto;
 
 }
 
@@ -75,7 +74,7 @@ nav ul a {
    
 
 .menu a{
-     padding: 16 5% ;
+     padding: 7px ;
      display: block;
 
 }
@@ -310,14 +309,6 @@ nav a {
 
 
 
-
-.section #topicos{
-    max-width: auto;
-}
-
-
-
-
 .ultimas_novedades h2{
      color: #FFFFFF;
      font-size: 36px;
@@ -424,7 +415,7 @@ nav a {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #060A24 100%;
+    color: #060A24;
     text-align: center;
     margin-top: 36px;
     margin-right: 16px;
@@ -438,7 +429,6 @@ nav a {
     width: 288px;
     height: 48px;
     background-color: #00F3BB;
-    opacity: 100px;
     padding: 10px;
     margin-right: 16px;
 }
