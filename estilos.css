@@ -589,7 +589,11 @@ nav a:active{
     display: flex;
 }
   
-  
+.parrafo-desktop {
+    opacity: 1;
+    display: block;
+    padding-right: 35%;
+}
   
   
  /*FLEXBOX*/ 
